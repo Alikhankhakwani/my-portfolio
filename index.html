@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Khan - Flutter Developer</title>
+  <meta name="description" content="Flutter Mobile Developer from Rawalpindi - 4 real apps"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="dark"> <!-- default dark mode -->
+  <button id="theme-toggle" title="Toggle Dark/Light Mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <header class="glass-header">
+    <div class="container">
+      <h1>Ali Khan</h1>
+      <p>Flutter Mobile Developer</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About -->
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        Passionate Flutter developer from Rawalpindi, specializing in cross-platform mobile apps with clean architecture, Firebase, Google Maps, and exceptional UX.<br>
+        I build useful, user-focused applications — from daily trackers to spiritual tools.
+      </p>
+      <div class="buttons">
+        <a href="assets/Ali khan CV.pdf" download class="btn primary">Download Resume</a>
+        <a href="https://github.com/Alikhankhakwani" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/ali-khan-2b2650277/" target="_blank" class="btn">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-in">
+      <h2>My Flutter Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Meals App -->
+        <div class="project-card">
+          <div class="carousel">
+            <div class="slides">
+              <img src="assets/meals/meals-1.png" alt="Meals App - Home" loading="lazy"/>
+              <img src="assets/meals/meals-2.png" alt="Meals App - Categories" loading="lazy"/>
+              <img src="assets/meals/meals-3.png" alt="Meals App - Detail" loading="lazy"/>
+              <img src="assets/meals/meals-4.png" alt="Meals App - Filters" loading="lazy"/>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="dots"></div>
+          </div>
+          <div class="content">
+            <h3>Meals App</h3>
+            <p class="tech">Flutter • Riverpod • Firebase Firestore</p>
+            <p>Recipe browser with favorites, filters (vegan, gluten-free, etc.), clean UI and real-time sync.</p>
+            <div class="links">
+              <a href="https://github.com/Alikhankhakwani/Meals" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expense Tracker -->
+        <div class="project-card">
+          <div class="carousel">
+            <div class="slides">
+              <img src="assets/expense/Tracker-1.png" alt="Expense Tracker - List" loading="lazy"/>
+              <img src="assets/expense/Tracker-2.png" alt="Expense Tracker - Add" loading="lazy"/>
+              <img src="assets/expense/Tracker-3.png" alt="Expense Tracker - Delete" loading="lazy"/>
+              <img src="assets/expense/Tracker-4.png" alt="Expense Tracker - Details" loading="lazy"/>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="dots"></div>
+          </div>
+          <div class="content">
+            <h3>Expense Tracker</h3>
+            <p class="tech">Flutter • Riverpod • Firebase • Charts</p>
+            <p>Track income/expenses, monthly budgets, categories, interactive charts, real-time sync.</p>
+            <div class="links">
+              <a href="https://github.com/Alikhankhakwani/expense-tracker" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tasbi & Dua Counter -->
+        <div class="project-card">
+          <div class="carousel">
+            <div class="slides">
+              <img src="assets/Tasbi/Tasbi-1.png" alt="Tasbi - Home" loading="lazy"/>
+              <img src="assets/Tasbi/Tasbi-2.png" alt="Tasbi - Counter" loading="lazy"/>
+              <img src="assets/Tasbi/Tasbi-3.png" alt="Tasbi - Custom Dua" loading="lazy"/>
+              <img src="assets/Tasbi/Tasbi-4.png" alt="Tasbi - History" loading="lazy"/>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="dots"></div>
+          </div>
+          <div class="content">
+            <h3>Tasbi & Dua Counter</h3>
+            <p class="tech">Flutter • Firebase Auth • Firestore • Vibration</p>
+            <p>Quran-based tasbih counter, custom duas, vibration feedback, multi-device sync.</p>
+            <div class="links">
+              <a href="https://github.com/Alikhankhakwani/tasbi-app" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Favorite Places -->
+        <div class="project-card">
+          <div class="carousel">
+            <div class="slides">
+              <img src="assets/Favorite/Place-1.png" alt="Places - Home" loading="lazy"/>
+              <img src="assets/Favorite/Place-2.png" alt="Places - Map" loading="lazy"/>
+              <img src="assets/Favorite/Place-3.png" alt="Places - Add" loading="lazy"/>
+              <img src="assets/Favorite/Place-4.png" alt="Places - Details" loading="lazy"/>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="dots"></div>
+          </div>
+          <div class="content">
+            <h3>Favorite Places</h3>
+            <p class="tech">Flutter • Google Maps API • Firebase • Geolocator</p>
+            <p>Save & explore personal places with interactive maps, photos, notes & real-time sync.</p>
+            <div class="links">
+              <a href="https://github.com/Alikhankhakwani/favorite_places" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+      <h2>Get in Touch</h2>
+      <p>I'm open to freelance, full-time mobile dev roles, or collaborations.</p>
+      <div class="buttons">
+        <a href="mailto:alikhankhakwani95@gmail.com" class="btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/ali-khan-2b2650277/" target="_blank" class="btn">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Ali Khan • Built with passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
