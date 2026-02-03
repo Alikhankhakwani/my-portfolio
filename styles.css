@@ -162,8 +162,9 @@ body.light .project-card {
 
 .carousel {
   position: relative;
-  height: 400px;
+  height: 440px;              /* taller for better fit with contain */
   overflow: hidden;
+  background: #111;           /* fallback for letterboxing */
 }
 
 .slides {
@@ -175,8 +176,9 @@ body.light .project-card {
 .slides img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;        /* ← Full image visible, zoomed out */
   object-position: center;
+  background: #111;           /* dark background behind letterboxed areas */
   flex-shrink: 0;
 }
 
@@ -311,7 +313,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .carousel {
-    height: 340px;
+    height: 380px;          /* adjusted for mobile */
   }
   .glass-header {
     min-height: 420px;
