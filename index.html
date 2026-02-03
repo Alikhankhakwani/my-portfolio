@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ali Khan - Flutter Developer</title>
+  <title>Ali Khan - Software Developer</title>
   <meta name="description" content="Flutter Mobile Developer from Rawalpindi - 4 real apps"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
-<body class="dark"> <!-- default dark mode -->
+<body class="dark">
   <button id="theme-toggle" title="Toggle Dark/Light Mode">
     <i class="fas fa-moon"></i>
   </button>
@@ -19,34 +19,59 @@
   <header class="glass-header">
     <div class="container">
       <h1>Ali Khan</h1>
-      <p>Flutter Mobile Developer</p>
+      <p>Software Developer</p>
     </div>
   </header>
 
   <main class="container">
-    <!-- About -->
+    <!-- About - Centered with modern glass card -->
     <section id="about" class="fade-in">
       <h2>About Me</h2>
-      <p>
-        Passionate Full-Stack Developer Expert in scalable Java Spring Boot backends & beautiful Flutter mobile apps
-Build secure, high-performance RESTful APIs & microservices with Spring Boot, Spring Security, JPA/Hibernate
-Handle JWT/OAuth, PostgreSQL/MySQL, Docker basics, clean architecture & thorough testing (JUnit, Mockito)
-Craft cross-platform iOS/Android apps with Flutter — clean architecture, Provider/Bloc/Riverpod, pixel-perfect UX
-Deep experience with Firebase (Auth, Firestore, Cloud Functions), Google Maps & real-time features
-Deliver user-focused solutions: from daily trackers and productivity tools to spiritual & lifestyle apps
-Open to full-stack, backend-heavy or mobile roles — let's create impactful software together!
-      </p>
+      
+     <div class="about-content">
+    <p>
+      Passionate Full-Stack Developer Expert in scalable Java Spring Boot backends & beautiful Flutter mobile apps
+      Build secure, high-performance RESTful APIs & microservices with Spring Boot, Spring Security, JPA/Hibernate
+      Handle JWT/OAuth, PostgreSQL/MySQL, Docker basics, clean architecture & thorough testing (JUnit, Mockito)
+      Craft cross-platform iOS/Android apps with Flutter — clean architecture, Provider/Bloc/Riverpod, pixel-perfect UX
+      Deep experience with Firebase (Auth, Firestore, Cloud Functions), Google Maps & real-time features
+      Deliver user-focused solutions: from daily trackers and productivity tools to spiritual & lifestyle apps
+      Open to full-stack, backend-heavy or mobile roles — let's create impactful software together!
+    </p>
+  </div>
+
       <div class="buttons">
         <a href="assets/Ali khan CV.pdf" download class="btn primary">Download Resume</a>
         <a href="https://github.com/Alikhankhakwani" target="_blank" class="btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/ali-khan-2b2650277/" target="_blank" class="btn">LinkedIn</a>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="fade-in">
-      <h2>My Flutter Projects</h2>
+
+      <!-- Projects -->
+      <h2>My Projects</h2>
       <div class="projects-grid">
+        <!-- Point of Sale API -->
+        <div class="project-card">
+          <div class="carousel">
+            <div class="slides">
+              <img src="assets/java api/Java_api-1.png" alt="Java Api - Home" loading="lazy"/>
+              <img src="assets/java api/Java_api-2.png" alt="Java Api - Add" loading="lazy"/>
+              <img src="assets/java api/Java_api-3.png" alt="Java Api - Update" loading="lazy"/>
+              <img src="assets/java api/Java_api-4.png" alt="Java Api - Delete" loading="lazy"/>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+            <div class="dots"></div>
+          </div>
+          <div class="content">
+            <h3>Point of Sale API</h3>
+            <p class="tech">Java • Spring Boot • MySQL</p>
+            <p>Point of Sale API with Spring Boot and MySQL Database for inventory management.</p>
+            <div class="links">
+              <a href="https://github.com/Alikhankhakwani/pointofsale/tree/master" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Meals App -->
         <div class="project-card">
@@ -139,17 +164,16 @@ Open to full-stack, backend-heavy or mobile roles — let's create impactful sof
             </div>
           </div>
         </div>
-
       </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="fade-in">
-      <h2>Get in Touch</h2>
-      <p>I'm open to freelance, full-time mobile dev roles, or collaborations.</p>
-      <div class="buttons">
-        <a href="mailto:alikhankhakwani95@gmail.com" class="btn">Email Me</a>
-        <a href="https://www.linkedin.com/in/ali-khan-2b2650277/" target="_blank" class="btn">LinkedIn</a>
+       <!-- Contact Buttons + Projects -->
+    <section id="contact-projects" class="fade-in">
+      <div class="contact-buttons">
+        <h2>Let's Connect</h2>
+        <div class="buttons">
+          <a href="mailto:alikhankhakwani95@gmail.com" class="btn">Email Me</a>
+          <a href="https://www.linkedin.com/in/ali-khan-2b2650277/" target="_blank" class="btn">LinkedIn</a>
+        </div>
       </div>
     </section>
   </main>
